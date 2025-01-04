@@ -22,7 +22,7 @@ $$
 	f(x) = \frac{sin(x^2)e^{x/3}}{\sqrt{x^2 + 4}}
 $$
 for $x = 3$. This function can be quite challenging to derive analytically. The implemented methods are in the file ``methods.py``. A graph of the function looks like this:
-![The function f.](images/graph_01.jpg)
+![The function f.](images/graph_01.png)
 In order to see what happens for decreasing values of $h$, we use an array of values of $h$ from $1$ to $10^{-16}$.  The value of the derivative of $f$ at point $x=3$ is $-4.08963$. As the graph bellow shows us, values of $h$ too close to 1 give a very unsatisfactory result, as do values smaller than $10^{-13}$. So, we want values of $h$ that are neither too large nor too small.
-![Derivative of the function f using the forward difference method.](images/graph_02.jpg)
+![Derivative of the function f using the forward difference method.](images/graph_02.png)
 
