@@ -1,6 +1,6 @@
 ﻿# The Derivative
 ## Itroduction
-<span style="font-size: 30px">The first derivative of a function $f(x)$ is given by the expression 
+<span style="font-size: 50px">The first derivative of a function $f(x)$ is given by the expression 
 $\boxed{f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}}$<br>We can compute it analytically by hand using the methods we learn in Calculus. However, when modeling physical systems, handling large data sets or dealing with simulations, it is unpractical or even impossible to solve everything by hand. At some point we can't avoid using a computer. So here I show how to solve derivatives using some numerical methods.<span>
 ## Errors
 The good new is that computers can approximate the value of a derivative at some point $x$ quite well. The bad new is that computers can only approximate, they cannot give the exact answer. Thus all methods come with some unavoidable errors. We have two kinds of errors: approximation and roundoff errors. The latter kind is due the finite memory of computers, which limits the precision. Bellow we show how approximation errors happen.
