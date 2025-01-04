@@ -1,2 +1,9 @@
 # Ignore Python files
 derivatives/__pycache__/
+
+# Texstudio files
+derivatives/*.aux
+derivatives/*.log
+derivatives/*.out
+derivatives/*.tex
+derivatives/*.gz
