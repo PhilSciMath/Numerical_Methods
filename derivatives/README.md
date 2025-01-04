@@ -15,7 +15,7 @@ The result is simply:
 $\boxed{f'(x) = \frac{f(x + h) - f(x)}{h} + \mathcal{O}(h)}$<br>
 This expression contains the definition of derivative plus the error $\mathcal{O}(h)$ which results from approximation: $\mathcal{O}(h) \approx - \frac{h}{2} f''(x)$. We can do so because all the other terms in the Taylor expansion depend on some power of $h$, and we want $h$ very small, so $h > h^n$ for $n \in \mathbb{N}$ and $0 < h < 1$. Besides, notice how the denominator keeps growing as a factorial. Thus, the most meaningful term to describe the error is the one we assigned to $\mathcal{O}(h)$.
 If we have the value of the analytical derivative at a point $x$, an estimate of the error can be obtained with:
-$\boxed{\Epsilon_{app} = \frac{|f'_a(x)-f'_n(x)|}{|f'_a(x)|}}$<br>
+$\boxed{\epsilon_{app} = \frac{|f'_a(x)-f'_n(x)|}{|f'_a(x)|}}$<br>
 To implement the forward difference method, all we have to do is to express the definition of the derivative as it is. Here I do it in Python. The numerical derivative function takes three arguments: a function $f$ to derive, a number $x$ on which we want to know the derivative and  a point $h$ to the right of $x$. This is where the name **forward difference** comes from (we are going from $x$ to the right towards $h$). 
 In the file ``main.py`` I will use this method to find $f'(x)$ for the function
 $$
