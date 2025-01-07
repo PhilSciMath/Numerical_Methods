@@ -9,3 +9,11 @@
 """
 def fderivative(f, x, h):
     return (f(x + h) - f(x)) / h
+
+
+"""
+    Method 2 - Central difference Approximation
+    Same as before, it takes a function, an x value and a h value.
+"""
+def cderivative(f, x, h):
+    return (f(t + h) - f(t - h)) / 2 * h
