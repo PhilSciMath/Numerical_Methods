@@ -25,7 +25,7 @@ plt.legend()
 # The idea is to see what happens as h gets smaller (approaches 0).
 x = 3
 h_array = np.logspace(0, -16, num=17, base=10)
-df_array = [mtd.fderivative(f, x, h) for h in h_array]
+df_array = [mtd.fd(f, x, h) for h in h_array]
 
 plt.figure(dpi=150)
 plt.semilogx(h_array, df_array, label="f'(x)", color='orange')
