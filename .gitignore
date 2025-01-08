@@ -1,5 +1,5 @@
 # Ignore Python files
-derivatives/__pycache__/
+*/__pycache__/
 
 # Texstudio files
 derivatives/*.aux
