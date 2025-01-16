@@ -31,7 +31,7 @@ plt.legend()
 y_axis_2 = [intf(i) for i in x_axis]
 plt.subplot(122)
 plt.plot(x_axis, y_axis_2, label=r"$\int f(x) dx$", color="orange")
-plt.title("Graph of the Inegral of f(x)")
+plt.title("Graph of the Integral of f(x)")
 plt.xlabel("x")                                                                  
 plt.ylabel("f'(x)")
 plt.legend()
